@@ -1,12 +1,6 @@
 from model import answer_question, qa_pipeline
 
 
-from fastapi import FastAPI
-
-app = FastAPI()
-
-app.post("/ask")
-
 # Define the context and question in Arabic
 context = ""#EnterYourContext
 question = ""#EnterYourQuestion
