@@ -78,6 +78,21 @@ The training process is documented in `QA_arabert_finetune_code.ipynb`. The note
 - Weight Decay: 0.02
 - Warmup Ratio: 0.1
 
+### Evaluation Metrics
+Below are the comparative performance metrics for different Arabic language models:
+
+| Model        | ROUGE-1 | ROUGE-2 | ROUGE-L | WER    | BLEU   |
+|-------------|---------|---------|---------|---------|---------|
+| ArabianGpt01| 0.8464  | 0.7562  | 0.8443  | 0.3190  | 0.6353  |
+| AraBert     | 0.8415  | 0.7537  | 0.8391  | 0.2765  | 0.6101  |
+| DistilBert  | 0.2625  | 0.1117  | 0.2492  | 1.0226  | 0.0240  |
+
+Key observations:
+- ArabianGpt01 shows the best overall performance across ROUGE metrics
+- AraBert performs very similarly to ArabianGpt01
+- DistilBert shows significantly lower performance across all metrics except WER
+- Both ArabianGpt01 and AraBert achieve strong ROUGE-1 scores around 0.84
+
 ## Files Description
 
 ### QA_arabert_finetune_code.ipynb
