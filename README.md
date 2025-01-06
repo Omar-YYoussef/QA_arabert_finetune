@@ -110,8 +110,7 @@ The model is trained on the ARCD dataset with the following metrics:
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-[Specify your license here]
+
 
 ## Acknowledgments
 - AraBART model developers
